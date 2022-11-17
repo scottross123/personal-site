@@ -2,14 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
 
 :root {
-    /* gray primary */
-    --clr-primary: #504A40;
+    --clr-warm-gray: #504A40;
+    --clr-rusty: #FB8758;
+    --clr-urple: #2A0134;
+    --clr-black: #020202;
+    --clr-whitish: #FBF8FF;
+    --clr-teal: #00C7B2;
 
-    /* orange secondary */
-    --clr-secondary: #FB8758;
+    --clr-primary: var(--clr-black);
+    --clr-secondary: var(--clr-whitish);
+    --clr-header: var(--clr-rusty);
+    --clr-hover: var(--clr-teal);
+
+    //--clr-gradient: linear-gradient(45deg, black, black);
+    /*--clr-background:*/
 
     /* font family */
-    --ff-primary: 'Fira Sans', sans-serif;
+    --ff-primary: JetBrains Mono, sans-serif;
 
     --fs-xs: .694rem;
     --fs-sm: .833rem;

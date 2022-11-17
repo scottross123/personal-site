@@ -28,9 +28,8 @@ footer {
     flex-shrink: 0;
 }
 
-header, nav {
+nav {
     display: flex;
-    flex-direction: row;
     align-content: center;
     justify-content: center;
 }
@@ -43,12 +42,16 @@ header {
 }
 
 nav {
-    margin: 1em;
+    /* margin: 1em; */
 }
 
 a {
     color: inherit; 
     text-decoration: inherit;
+}
+
+h1, h2, h3, header {
+    color: var(--clr-header);
 }
 
 article {
@@ -68,6 +71,7 @@ article {
 
 #name {
     font-size: var(--fs-big-af);
+    text-align: center;
 }
 
 #nav-links {
@@ -83,4 +87,8 @@ article {
 
 #nav-links > li:last-child {
     border-right: 0;
+}
+
+a:hover {
+    color: var(--clr-hover);
 }
