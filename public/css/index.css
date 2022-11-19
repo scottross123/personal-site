@@ -36,8 +36,8 @@ nav {
 
 header {
     padding-top: 1em;
-    top: 0;
-    position: sticky;
+    /*top: 0;*/
+    /*position: sticky;*/
     background-color: var(--clr-primary);
 }
 
@@ -62,7 +62,6 @@ article {
 }
 
 .post-title {
-	text-decoration: underline;
     color: var(--clr-pinkish);
 }
 
