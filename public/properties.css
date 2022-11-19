@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains Mono");
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
+
+:root {
+    --clr-warm-gray: #504A40;
+    --clr-rusty: #FB8758;
+    --clr-urple: #2A0134;
+    --clr-black: #020202;
+    --clr-whitish: #FBF8FF;
+    --clr-teal: #00C7B2;
+
+    --clr-primary: var(--clr-black);
+    --clr-secondary: var(--clr-whitish);
+    --clr-header: var(--clr-rusty);
+    --clr-hover: var(--clr-teal);
+
+    //--clr-gradient: linear-gradient(45deg, black, black);
+    /*--clr-background:*/
+
+    /* font family */
+    --ff-primary: JetBrains Mono, sans-serif;
+
+    --fs-xs: .694rem;
+    --fs-sm: .833rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.2rem;
+    --fs-xl: 1.44rem;
+    --fs-xxl: 1.782rem;
+    --fs-big-af:2.074rem;
+
+    --fs-body: var(--fs-md);
+}
