@@ -8,9 +8,11 @@
     --clr-black: #020202;
     --clr-whitish: #FBF8FF;
     --clr-teal: #00C7B2;
+    --clr-pinkish: #E480F4;
 
     --clr-primary: var(--clr-black);
     --clr-secondary: var(--clr-whitish);
+    --clr-acccent: var(--clr-pinkish);
     --clr-header: var(--clr-rusty);
     --clr-hover: var(--clr-teal);
 

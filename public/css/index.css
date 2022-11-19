@@ -50,12 +50,20 @@ a {
     text-decoration: inherit;
 }
 
-h1, h2, h3, header {
+h1, h2, h3, h4, h5, h6, header {
     color: var(--clr-header);
 }
 
 article {
-    margin-bottom: 3em;
+}
+
+.post p {
+    font-size: var(--fs-sm);
+}
+
+.post-title {
+	text-decoration: underline;
+    color: var(--clr-pinkish);
 }
 
 .wrapper {
@@ -74,8 +82,15 @@ article {
     text-align: center;
 }
 
-#nav-links {
+#nav-links, .tags {
     list-style-type: none;
+}
+
+.tags > li {
+    display: inline;
+    padding: .2em;
+    background-color: crimson;
+    font-size: var(--fs-sm);
 }
 
 #nav-links > li {
@@ -83,10 +98,6 @@ article {
     float: left;
     padding: .5em;
     font-size: var(--fs-md);
-}
-
-#nav-links > li:last-child {
-    border-right: 0;
 }
 
 a:hover {
