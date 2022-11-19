@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-		<title>{{ page.title }}</title>
+		<title>Hey</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -13,80 +13,35 @@
 
             <nav>
                 <ul id="nav-links">
-                    <li>Bio</li>
-
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a>Posts</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/experience">Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
-            <article id="bio">
-                <p class="article-body">
-                    Hi, I'm a software engineer from Atlanta, Georgia. I gradauted from Georgia State University
-                    with a B.S. in Computer Science in 2022. My primary interest and experience is web development.
-                    My most recent experience was as a Software Engineer Intern at HealthEdge, where I worked on
-                    a new UI for an application using HTML, CSS, JavaScript, and React. My next experience will be
-                    as a Research & Development Software Engineer at Manhattan Associates starting this
-                    January.
-                    <br>
-                    <br>
-                    My main programming languages are TypeScript and Java. I also have experience with Python.
-                    My other skills include React, JavaScript, HTML, CSS, Java, Spring Boot, Python, and Flask.
-                    <br>
-                    <br>
-                    I love learning bla bla bal 
-                </p>
-            </article>
-            <article id="experience">
-                <h2 class="article-title">Experience</h2>
-                <p class="article-body">
-                    <h3>2023</h3>
-                    <ul class="timeline">
-                        <li>Start as a R&D Software Engineer @ Manhattan Associates.</li>
-                        <li><i>Learn Rust, C, and more about systems progrmaming.</i></li>
-                        <li><i>Get into game development.</i></li>
-                    </ul>
-                    <h3>2022</h3>
-                    <ul class="timeline">
-                        <li>Learn and become proficient with React.</li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <h3>2021</h3>
-                    <ul class="timeline">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-            </article>
-            <article id="projects">
-                <h2 class="article-title">Projects</h2>
-                <p class="article-body">
-                    <h3>Trivia Quiz</h3>
-                    <a>Live</a> <a>Repo</a>
-                    <p>Final project for software engineering course.</p>
-                </p>
-            </article>
-            <article id="contact">
-                <h2 class="article-title">Contact</h2>
-                <p class="article-body">
-                    <form>
-                        <label></label>
-                        <input>
-                        <label></label>
-                        <input>
-                        <label></label>
-                        <input>
-                        <label></label>
-                        <input>
-                    </form>
-                </p>
-            </article>
+            {% block content %}
+                <article id="bio">
+                    <p class="article-body">
+                        Hi, I'm a software engineer from Atlanta, Georgia. I gradauted from Georgia State University
+                        with a B.S. in Computer Science in 2022. My primary interest and experience is web development.
+                        My most recent experience was as a Software Engineer Intern at HealthEdge, where I worked on
+                        a new UI for an application using HTML, CSS, JavaScript, and React. My next experience will be
+                        as a Research & Development Software Engineer at Manhattan Associates starting this
+                        January.
+                        <br>
+                        <br>
+                        My main programming languages are TypeScript and Java. I also have experience with Python.
+                        My other skills include React, JavaScript, HTML, CSS, Java, Spring Boot, Python, and Flask.
+                        <br>
+                        <br>
+                        I love learning bla bla bal 
+                    </p>
+                </article>
+            {% endblock content %}
        </main>
 
         <footer>
