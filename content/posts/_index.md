@@ -1,7 +1,4 @@
 +++
-
 title = "Posts"
-
+template = "posts.html"
 +++
-
-hey

@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <section>
+        {% for page in section.pages %}
+            <article class="post">
+                <a href="{{ page.permalink }}">{{ page.title }}</a>
+            </article>
+        {% endfor %}
+    </section>
+{% endblock content %}

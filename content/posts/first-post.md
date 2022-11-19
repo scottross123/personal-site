@@ -1,9 +1,7 @@
 +++
 
-title = "yuh"
+title = "First Post"
 
 +++
 
-yuhh
-
-# YUHHHH
+# FIRST POST
