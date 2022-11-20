@@ -19,13 +19,23 @@ body {
 
 main {
     margin: auto;
-    width: 500px;
+    min-width: 300px;
+    width: 50%;
+    max-width: 600px;
     flex-grow: 1;
 }
 
 footer {
     flex-grow: 0;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+address {
+    width: auto;
+    font-size: var(--fs-xs);
 }
 
 nav {
@@ -44,6 +54,7 @@ header {
 nav {
     /* margin: 1em; */
 }
+
 
 a {
     color: inherit; 
