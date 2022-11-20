@@ -23,6 +23,7 @@ main {
     width: 50%;
     max-width: 600px;
     flex-grow: 1;
+    padding: 1em;
 }
 
 footer {
@@ -61,14 +62,20 @@ a {
     text-decoration: inherit;
 }
 
+input {
+    background: inherit;
+    color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6, header {
     color: var(--clr-header);
 }
 
 article {
+    margin-bottom: 2em;
 }
 
-.post p {
+article p {
     font-size: var(--fs-sm);
 }
 
