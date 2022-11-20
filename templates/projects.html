@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>yo</h1>
+    <section>
+       {% for project in page.extra.projects %}
+        <article>
+            <h4 class="post-title">{{ project.name }}</h4>
+            <small><a href={{ project.repo_link }}>Repo</a> <a href={{ project.live_link }}>Live</a></small>
+            <p>{{ project.description }}</p>
+            <ul class="tags">
+                {% for tech in project.tech_stack %}
+                <li>{{ tech }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+       {% endfor %}
+    </section>
 {% endblock content %}
