@@ -177,7 +177,6 @@ path {
         --clr-tag: var(--clr-green);
         --clr-hover: var(--clr-rusty);
     }
-
 }
 
 @media (prefers-color-scheme: dark) {
