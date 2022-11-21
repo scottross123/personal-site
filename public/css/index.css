@@ -96,6 +96,16 @@ article p {
     text-align: center;
 }
 
+#theme-button {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+#theme-button:hover {
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
 }
