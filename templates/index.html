@@ -36,27 +36,25 @@
 
     <section id="recent">
         <h2 class="section-title">recent posts</h2>
-        <ul>
-            {% set section = get_section(path="posts/_index.md") %}
-            {% for page in section.pages %}
-                {% if loop.index > 3 %}{% break %}{% endif %}
-                <article class="post">
-                    <h4 class="post-title">
-                        <a href="{{ page.permalink }}">{{ page.title }}</a>
-                    </h4>
-                    <p>{{ page.description }}</p>
-                    <small>
-                        <time>{{ page.date }}</time> |
-                        {{ page.word_count }} words |
-                        {{ page.reading_time}}
-                        {% if page.reading_time == 1 %}
-                        minute
-                        {% else %}
-                        minutes
-                        {% endif %}
-                    </small>
-                </article>
-            {% endfor %}
-        </ul>
+        {% set section = get_section(path="posts/_index.md") %}
+        {% for page in section.pages %}
+            {% if loop.index > 3 %}{% break %}{% endif %}
+            <article class="post">
+                <h3 class="post-title">
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </h3>
+                <p>{{ page.description }}</p>
+                <small>
+                    <time>{{ page.date }}</time> |
+                    {{ page.word_count }} words |
+                    {{ page.reading_time}}
+                    {% if page.reading_time == 1 %}
+                    minute
+                    {% else %}
+                    minutes
+                    {% endif %}
+                </small>
+            </article>
+        {% endfor %}
     </section>
 {% endblock content %}

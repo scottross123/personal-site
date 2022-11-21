@@ -98,8 +98,9 @@ article p {
 
 #theme-button {
     position: absolute;
-    top: 1%;
-    right: 1%;
+    top: 2%;
+    right: 2%;
+    font-size: var(--fs-lg);
 }
 
 #theme-button:hover {
@@ -163,4 +164,29 @@ path {
 
 .underlined {
     text-decoration: underline;
+}
+
+/*media queries*/
+@media (prefers-color-scheme: light) {
+    body {
+        --clr-primary: wheat;
+        /*--clr-primary: var(--clr-whitish)*/
+        --clr-secondary: black;
+        --clr-header: var(--clr-blue);
+        --clr-accent: var(--clr-red);
+        --clr-tag: var(--clr-green);
+        --clr-hover: var(--clr-rusty);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --clr-primary: var(--clr-black);
+        --clr-secondary: var(--clr-whitish);
+        --clr-accent: var(--clr-pinkish);
+        --clr-header: var(--clr-rusty);
+        --clr-hover: var(--clr-teal);
+        --clr-tag: var(--clr-red);
+    }
 }
