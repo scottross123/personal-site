@@ -6,20 +6,17 @@ const theme = window.localStorage.getItem("theme");
 if (theme) {
    applyTheme(theme);
 } else if (prefersDarkMode.matches) {
-    applyTheme("night")
+    applyTheme("night");
 } else {
-    applyTheme("day")
+    applyTheme("day");
 }
 
 themeButton.addEventListener("click", () => {
     const currentTheme = window.localStorage.getItem("theme");
-    console.log("theme: ", theme);
     if (currentTheme === "day") {
-        console.log("theme in first if ", window.localStorage.getItem("theme"))
         applyTheme("night");
     }
     if (currentTheme === "night") {
-        console.log("theme in first if ", window.localStorage.getItem("theme"))
         applyTheme("day");
     }
 });

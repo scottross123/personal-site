@@ -1,4 +1,61 @@
-@import "properties.css";
+@import url("https://fonts.googleapis.com/css?family=JetBrains Mono");
+
+:root {
+    /* colors */
+    --clr-warm-gray: #504A40;
+    --clr-rusty: #FB8758;
+    --clr-urple: #2A0134;
+    --clr-black: #0F0F0F;
+    /*--clr-black: #0D1321;*/
+    --clr-whitish: #FBF8FF;
+    --clr-teal: #00C7B2;
+    --clr-pinkish: #E480F4;
+    --clr-blue: #0047AB;
+    --clr-brown: #372A04;
+    --clr-red: #8D021F;
+    --clr-green: #20C197;
+
+    --clr-primary: var(--clr-black);
+    --clr-secondary: var(--clr-whitish);
+    --clr-accent: var(--clr-pinkish);
+    --clr-header: var(--clr-rusty);
+    --clr-hover: var(--clr-teal);
+
+
+    /* font family */
+    --ff-primary: JetBrains Mono, sans-serif;
+
+    --fs-xs: .694rem;
+    --fs-sm: .833rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.2rem;
+    --fs-xl: 1.44rem;
+    --fs-xxl: 1.782rem;
+    --fs-big-af:2.074rem;
+
+    --fs-body: var(--fs-md);
+}
+
+/* themes */
+body.night {
+    --clr-primary: var(--clr-black);
+    --clr-secondary: var(--clr-whitish);
+    --clr-accent: var(--clr-pinkish);
+    --clr-header: var(--clr-rusty);
+    --clr-hover: var(--clr-teal);
+    --clr-tag: var(--clr-red);
+}
+
+
+body.day {
+    --clr-primary: wheat;
+    /*--clr-primary: var(--clr-whitish)*/
+    --clr-secondary: black;
+    --clr-header: var(--clr-blue);
+    --clr-accent: var(--clr-red);
+    --clr-tag: var(--clr-green);
+    --clr-hover: var(--clr-rusty);
+}
 
 * {
     box-sizing: border-box;
@@ -6,6 +63,8 @@
     padding: 0;
     scroll-behavior:smooth
 }
+
+/* main tags */
 
 body {
     font-family: var(--ff-primary);
@@ -51,7 +110,7 @@ header {
     padding: 1em;
     /*top: 0;*/
     /*position: sticky;*/
-    background-color: var(--clr-primary);
+    /*background-color: var(--clr-primary);*/
 }
 
 a {
