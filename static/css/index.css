@@ -39,6 +39,9 @@ address {
     font-size: var(--fs-xs);
 }
 
+small {
+    font-size: var(--fs-xs);
+}
 nav ul {
     width: fit-content;
     margin: auto;
@@ -111,7 +114,7 @@ ul {
 }
 
 .tags > li {
-    background-color: crimson;
+    background-color: var(--clr-tag);
     font-size: var(--fs-sm);
 }
 
