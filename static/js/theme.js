@@ -1,3 +1,5 @@
+// theme toggle code
+
 const themeButton = document.getElementById("theme-button");
 const body = document.getElementsByTagName("body")[0];
 const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");

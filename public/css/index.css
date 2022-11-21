@@ -107,7 +107,7 @@ nav ul {
 }
 
 header {
-    padding: 1em;
+    padding: 1em 1em 0 1em;
     /*top: 0;*/
     /*position: sticky;*/
     /*background-color: var(--clr-primary);*/
@@ -123,7 +123,7 @@ input {
     color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, header {
+h1, h2, h3, h4, h5, h6 {
     color: var(--clr-header);
 }
 
@@ -133,6 +133,30 @@ article, section {
 
 article p {
     font-size: var(--fs-sm);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover {
+    color: var(--clr-hover);
+}
+
+path {
+    fill: var(--clr-secondary);
+}
+
+hr {
+    margin: 1em 0;
+    border-color: var(--clr-secondary);
+}
+
+/* classes */
+
+.post-header {
+    padding: 0;
+    margin-bottom: 1.5em;
 }
 
 .post-title {
@@ -148,26 +172,6 @@ article p {
 .article-title {
     font-size: var(--fs-xl);
     margin-bottom: .5em;
-}
-
-#name {
-    font-size: var(--fs-big-af);
-    text-align: center;
-}
-
-#theme-button {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    font-size: var(--fs-lg);
-}
-
-#theme-button:hover {
-    cursor: pointer;
-}
-
-ul {
-    list-style-type: none;
 }
 
 .icon {
@@ -196,19 +200,30 @@ ul {
     margin-bottom: .5em;
 }
 
-a:hover {
-    color: var(--clr-hover);
-}
-
-path {
-    fill: var(--clr-secondary);
-}
-
 .icon:hover path {
     fill: var(--clr-hover);
 }
 
-/*some utility classes*/
+/* ids */
+
+#name {
+    font-size: var(--fs-big-af);
+    text-align: center;
+}
+
+#theme-button {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: var(--fs-lg);
+}
+
+#theme-button:hover {
+    cursor: pointer;
+}
+
+/* some utility classes */
+
 .clr-accent {
     color: var(--clr-accent);
 }
@@ -225,7 +240,8 @@ path {
     text-decoration: underline;
 }
 
-/*media queries*/
+/* media queries */
+/* media color scheme is for users without javascript enabled */
 @media (prefers-color-scheme: light) {
     body {
         --clr-primary: wheat;

@@ -2,12 +2,12 @@
 
 {% block content %}
     <section>
-		<h2 class="section-title">posts</h2>
+		<h1 class="section-title">posts</h1>
         {% for page in section.pages %}
             <article class="post">
-				<h3 class="post-title">
+				<h2 class="post-title">
 					<a href="{{ page.permalink }}">{{ page.title }}</a>
-				</h3>
+				</h2>
 				<p>{{ page.description }}</p>
 				<small>
 					<time>{{ page.date }}</time> | 

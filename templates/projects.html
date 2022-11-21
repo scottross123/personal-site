@@ -6,13 +6,14 @@
        {% for project in page.extra.projects %}
         <article>
             <h3 class="post-title">{{ project.name }}</h3>
-            <small><a href={{ project.repo_link }}>repo</a> <a href={{ project.live_link }}>live</a></small>
-            <p>{{ project.description }}</p>
             <ul class="tags">
                 {% for tech in project.tech_stack %}
                 <li>{{ tech }}</li>
                 {% endfor %}
             </ul>
+            <small><a href={{ project.repo_link }}>repo</a> <a href={{ project.live_link }}>live</a></small>
+            <p>{{ project.description }}</p>
+
         </article>
        {% endfor %}
     </section>
