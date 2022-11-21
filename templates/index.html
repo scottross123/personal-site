@@ -12,10 +12,7 @@
             January
             <br>
             <br>
-            I love learning
-            <br>
-            <br>
-            You can view and then download my resume <a href="files/resume.pdf">here.</a>
+            I love learningI love learningI love learningI love learningI love learningI love learning
         </p>
     </article>
 
@@ -58,6 +55,16 @@
                         <a href="{{ page.permalink }}">{{ page.title }}</a>
                     </h4>
                     <p>{{ page.description }}</p>
+                    <small>
+                        <time>{{ page.date }}</time> |
+                        {{ page.word_count }} words |
+                        {{ page.reading_time}}
+                        {% if page.reading_time == 1 %}
+                        minute
+                        {% else %}
+                        minutes
+                        {% endif %}
+                    </small>
                 </article>
             {% endfor %}
         </ul>

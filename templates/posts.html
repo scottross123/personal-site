@@ -2,16 +2,13 @@
 
 {% block content %}
     <section>
+		<h2>posts</h2>
         {% for page in section.pages %}
             <article class="post">
 				<h4 class="post-title">
 					<a href="{{ page.permalink }}">{{ page.title }}</a>
 				</h4> 
 				<p>{{ page.description }}</p>
-				<ul class="tags">
-					<li>tag 1</li>
-					<li>tag 2</li>
-				</ul>
 				<small>
 					<time>{{ page.date }}</time> | 
 					{{ page.word_count }} words | 

@@ -39,23 +39,17 @@ address {
     font-size: var(--fs-xs);
 }
 
-nav {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+nav ul {
+    width: fit-content;
+    margin: auto;
 }
 
 header {
-    padding-top: 1em;
+    padding: 1em;
     /*top: 0;*/
     /*position: sticky;*/
     background-color: var(--clr-primary);
 }
-
-nav {
-    /* margin: 1em; */
-}
-
 
 a {
     color: inherit; 
@@ -80,7 +74,7 @@ article p {
 }
 
 .post-title {
-    color: var(--clr-pinkish);
+    color: var(--clr-accent);
 }
 
 .wrapper {
@@ -99,24 +93,46 @@ article p {
     text-align: center;
 }
 
-#nav-links, .tags {
+ul {
     list-style-type: none;
 }
 
-.tags > li {
+.icon {
+    position: relative;
+    top: .2em;
+    display:inline-block;
+    vertical-align:top;
+    line-height:0;
+}
+
+.nav-links > li, .tags > li{
     display: inline;
     padding: .2em;
+}
+
+.tags > li {
     background-color: crimson;
     font-size: var(--fs-sm);
 }
 
-#nav-links > li {
-    display: block;
-    float: left;
-    padding: .5em;
-    font-size: var(--fs-md);
+.nav-links > li {
+    font-size: var(--fs-sm);
 }
 
 a:hover {
     color: var(--clr-hover);
+}
+
+/*some utility classes*/
+.clr-accent {
+    color: var(--clr-accent);
+}
+
+.clr-hover {
+    color: var(--clr-hover);
+}
+
+.timeline {
+    list-style: square inside;
+
 }
