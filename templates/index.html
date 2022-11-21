@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <article id="bio">
-        <h2>about</h2>
-        <p class="article-body">
+    <section id="bio">
+        <h2 class="section-title">about</h2>
+        <p>
             I'm a software engineer from Atlanta, Georgia. I gradauted from Georgia State University
             with a B.S. in Computer Science in 2022. My primary interest and experience is web development.
             My most recent experience was as a Software Engineer Intern at HealthEdge, where I worked on
@@ -14,10 +14,10 @@
             <br>
             I love learningI love learningI love learningI love learningI love learningI love learning
         </p>
-    </article>
+    </section>
 
-    <article>
-        <h3>languages</h3>
+    <section>
+        <h2>languages</h2>
         <ul class="tags">
            <li>typescript 💙</li>
            <li>javascript</li>
@@ -26,7 +26,7 @@
            <li>html</li>
            <li>css</li>
         </ul>
-        <h3>libraries & frameworks</h3>
+        <h2>libraries & frameworks</h2>
         <ul class="tags">
             <li>react</li>
             <li>redux</li>
@@ -35,17 +35,17 @@
             <li>spring boot</li>
             <li>tailwindcss</li>
         </ul>
-       <h3>tools & other tech</h3>
+       <h2>tools & other tech</h2>
        <ul class="tags">
            <li>vite</li>
            <li>node.js</li>
            <li>heroku</li>
            <li>postgres</li>
        </ul>
-    </article>
+    </section>
 
-    <article id="recent">
-        <h2>recent posts</h2>
+    <section id="recent">
+        <h2 class="section-title">recent posts</h2>
         <ul>
             {% set section = get_section(path="posts/_index.md") %}
             {% for page in section.pages %}
@@ -68,5 +68,5 @@
                 </article>
             {% endfor %}
         </ul>
-    </article>
+    </section>
 {% endblock content %}

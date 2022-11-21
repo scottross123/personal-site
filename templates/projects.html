@@ -2,10 +2,10 @@
 
 {% block content %}
     <section>
-        <h2>projects</h2>
+        <h2 class="section-title">projects</h2>
        {% for project in page.extra.projects %}
         <article>
-            <h4 class="post-title">{{ project.name }}</h4>
+            <h3 class="post-title">{{ project.name }}</h3>
             <small><a href={{ project.repo_link }}>repo</a> <a href={{ project.live_link }}>live</a></small>
             <p>{{ project.description }}</p>
             <ul class="tags">
