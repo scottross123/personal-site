@@ -37,8 +37,10 @@
     <section id="recent">
         <h2 class="section-title">recent posts</h2>
         {% set section = get_section(path="posts/_index.md") %}
-        {% for page in section.pages %}
-            {% if loop.index > 3 %}{% break %}{% endif %}
+        {% if section.pages | length == 0 %}
+        <p>no posts</p>
+        {% endif %}
+        {% for page in section.pages | slice(end=3) %}
             <article class="post">
                 <h3 class="post-title">
                     <a href="{{ page.permalink }}">{{ page.title }}</a>

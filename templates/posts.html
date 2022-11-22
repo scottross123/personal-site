@@ -3,6 +3,9 @@
 {% block content %}
     <section>
 		<h1 class="section-title">posts</h1>
+		{% if section.pages | length == 0 %}
+			<p>no posts</p>
+		{% endif %}
         {% for page in section.pages %}
             <article class="post">
 				<h2 class="post-title">
@@ -10,7 +13,7 @@
 				</h2>
 				<p>{{ page.description }}</p>
 				<small>
-					<time>{{ page.date }}</time> | 
+					<time>{{ page.date }}</time> |
 					{{ page.word_count }} words | 
 					{{ page.reading_time}} 
 					{% if page.reading_time == 1 %} 
