@@ -1,0 +1,17 @@
+name: Check spelling of markdown files
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Spellcheck
+      - uses: actions/checkout@v2
+      - uses: igsekor/pyspelling-any@v0.0.2
+        name: Spellcheck
