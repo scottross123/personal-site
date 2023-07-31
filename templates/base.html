@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="author" content="Scott Ross">
+        <meta name="description" content="Personal site and blog for Scott Ross">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+        <link rel="canonical" href="https://www.scottross.dev" />
+        <title>Scott Ross</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body class="">
+        <div class="wrapper">
+
+            <main>
+                {% block content %}
+                {% endblock content %}
+            </main>
+
+            <aside>
+                <nav>
+                    <ul class="nav-links">
+                        <li ><a href="/"><strong>/home/scott</strong></a>
+                        <li><a href="/posts">/posts</a></li>
+                        <li><a href="/tags">/tags</a></li>
+                        <li><a href="/projects">/projects</a></li>
+                        <li><a href="/files" >/files</a></li>
+                        <li><a href="/tools" >/tools</a></li>
+                        <li><a href="/privacy" >/privacy</a></li>
+                        <li><a href="/settings" >/settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <footer>
+
+                <address>
+                    <span>powered by <a href="https://www.getzola.org/" target="_blank">zola</a></span>
+                </address>
+            </footer>
+        </div>
+        <script src="/js/theme.js"></script>
+    </body>
+</html>

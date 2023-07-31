@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for tax in config.taxonomies %}
+      <h1>/{{ tax.name }}</h1> 
+        <ul class="tags">
+            {% for tag in terms %}
+            <li><a href={{ tag.permalink }}>{{ tag.name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}    
+{% endblock content %}
