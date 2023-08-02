@@ -6,13 +6,15 @@
         <p>
             {% if section.pages | length == 0 %}
                 no posts
-            {% endif %}
+            {% else %}
             <ul>
             {% for page in section.pages %}
             <li>
                 {{ page.date }} | <a class="" href="{{ page.permalink }}">{{ page.title }}</a>
             </li>
             {% endfor %}
+            </ul>
+            {% endif %}
         </p>
     </section>
 {% endblock content %}

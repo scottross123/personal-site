@@ -1,13 +1,18 @@
 +++
-title = "Privacy"
+title = "privacy"
 +++
 
-# /privacy
+I am not interested in harvesting your data or violating your privacy.
 
-I can see your ip address (duh)
+## Analytics
 
-I collect some anyomized analytics with that self hosted thing insert here
+In future I want to collect privacy respecting analytics using a [Plausible](https://plausible.io/). I do not want to sell anything, I'm just curious about how many people are visiting my site, what countries, and what posts are being read. I don't have that setup yet though so right now I don't see or collect anything.
 
 ## JavaScript
 
-The only JavaScript I use on this site is for the theme picker, no tracking purposes what so ever. If you still prefer to disable JavaScript you can do so that the site will be functional just the same.
+The only JavaScript I will have on this site is probably a day/night theme picker and the Plausible script. This site will always be fully functional without enabling JavaScript
+
+## We use cookies to enchance your user experience on our site, to understand the details and what information we disclose, please see our cookie policy...
+
+Nah just kidding. No cookies or tracking or any of that nonsense what so ever.
+
