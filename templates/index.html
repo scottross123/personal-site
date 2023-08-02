@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>/home/scott</h1>
+    <header>
+        <h1>/home/scott</h1>
+    </header>
     <section>
         <h2>hi</h2>
         <p>
-            I'm a software engineer. I like tech, linux, self-hosting, programming, grains, bread, baking, music, among other things. When I am feeling inspired I write about them sometimes here.
+            I like tech, linux, self-hosting, programming, grains, bread, baking, music, among other things. When I am feeling inspired I write about it.
         </p>
 
         <h2 class="section-title">recent posts</h2>
         {% set posts_section = get_section(path="posts/_index.md") %}
 		{% if posts_section.pages | length == 0 %}
-			<p>no posts</p>
-		{% endif %}
-        <p>
+			no posts
+		{% else %}
+
         <ul>
         {% for post in posts_section.pages %}
         <li>
@@ -21,7 +23,9 @@
         </li>
         {% endfor %}
         </ul>
-        </p>
+        {% endif %}
+
+        <p></p>
 
         <h2 class="section-title">links</h2>
         <p>
@@ -41,7 +45,7 @@
                         </svg>
                     </span>
             </a>
-            send me an <a class="underlined" href="mailto:&#115;&#046;&#119;&#105;&#108;&#108;&#105;&#097;&#109;&#046;&#114;&#111;&#115;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">email</a>
+            <a class="underlined" href="mailto:&#115;&#046;&#119;&#105;&#108;&#108;&#105;&#097;&#109;&#046;&#114;&#111;&#115;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">email</a>
         </p>
     </section>
 {% endblock content %}

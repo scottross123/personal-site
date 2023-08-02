@@ -3,16 +3,17 @@
 title = "Pastry Flour Country Sourdough"
 description = "This is a test post to make sure the format for the blog is correct. It is also a bread recipe."
 date = 2022-11-22
-
+[taxonomies]
+tags = ["bread", "baking"]
 +++
 
-{{ picture(img="bread.webp", alt="bread", caption="bread") }}
+{{ picture(img="bread.webp", alt="bread", caption="Sourdough with 8% protein pastry flour") }}
 
 As challenge/experiment I wanted to try to make a decent country sourdough out of 100% white pastry flour, specifically [Bob's Red Mill Fine Pastry Flour](https://www.bobsredmill.com/unbleached-white-fine-pastry-flour.html), intended for pastries and cakes with a protein content of 8-9%. Also wanted to do this to dispel the myth I’ve seen a few times that you need the highest protein flour possible to make good bread. It is definitely possible to decent bread using weaker and all sorts of flour.
 
-## Vitals
 
 <table>
+    <caption>Vitals</caption>
 	<tr>
 		<th>Unit Weight</th>
 		<td>900g</td>
@@ -28,22 +29,53 @@ As challenge/experiment I wanted to try to make a decent country sourdough out o
 	</tr>
 </table>
 
-## Overall Formula
+<table>
+    <caption>Overall Formula</caption>
+    <tr>
+		<th>Ingredients</th>
+		<th>Weight</th>
+		<th>Baker's %</th>
+	</tr>
+    <tr>
+		<th>Bob's Mill Pastry Flour</th>
+		<td>540g</td>
+		<td>100%</td>
+	</tr>
+	<tr>
+		<th>Water</th>
+		<td>351g</td>
+		<td>65%</td>
+	</tr>
+	<tr>
+		<th>Salt</th>
+		<td>10g</td>
+		<td>1.8%</td>
+	</tr>
+</table>
 
-| Ingredients             | Weight | Baker's % |
-| ----------------------- | ------ | --------- |
-| Bob's Mill Pastry Flour |    540g    | 100%      |
-| Water                   |     351g   | 65%       |
-| Salt                    |      10g  | 1.8%      |
-| Total                   |      900g  | 166.8%          |
-
-## Preferment
-
-| Ingredients             | Weight  | Baker's % |
-| ----------------------- | ------- | --------- |
-| Bob's Mill Pastry Flour |    135g     | 100%      |
-| Water                   |     82g    | 61%       |
-| Starter                 |      27g   | 20%       |
+<table>
+    <caption>Sourdough Preferment</caption>
+    <tr>
+		<th>Ingredients</th>
+		<th>Weight</th>
+		<th>Baker's %</th>
+	</tr>
+    <tr>
+		<th>Bob's Mill Pastry Flour</th>
+		<td>135g</td>
+		<td>100%</td>
+	</tr>
+	<tr>
+		<th>Water</th>
+		<td>82g</td>
+		<td>61%</td>
+	</tr>
+	<tr>
+		<th>Starter</th>
+		<td>27g</td>
+		<td>20%</td>
+	</tr>
+</table>
 
 ## Process
 
@@ -65,9 +97,12 @@ Taste is nothing special, just white bread, no tang. Crumb is fluffy and tender,
 
 Now some tips when using weaker flours:
 
--   Lower the hydration. I used way less water in this bread than I typically do for country breads, but it did not feel overly stiff at all. Weaker flours will absorb less water and very quickly become a sticky mess if you try to use the same amount of water you’d use for bread flour.
--   No extended autolyse or autolyse at all. The enzymes active in the autolyse will weaken your dough further.
--   Shorter fermentation. A weaker dough is going to be less fermentation tolerant. This why I used a much larger amount of preferment/starter than normal, to shorten bulk fermentation and proofing
--   Gentle mixing, handling, and shaping. Doughs made with weaker flour will not be able to take as much punishment.
+- Lower the hydration. I used way less water in this bread than I typically do for country breads, but it did not feel overly stiff at all. Weaker flours will absorb less water and very quickly become a sticky mess if you try to use the same amount of water you’d use for bread flour.
+
+- No extended autolyse or autolyse at all. The enzymes active in the autolyse will weaken your dough further.
+
+- Shorter fermentation. A weaker dough is going to be less fermentation tolerant. This why I used a much larger amount of preferment/starter than normal, to shorten bulk fermentation and proofing
+
+- Gentle mixing, handling, and shaping. Doughs made with weaker flour will not be able to take as much punishment.
 
 [A good article for reference](https://breadtopia.com/baking-bread-with-low-gluten-wheat/)

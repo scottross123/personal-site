@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=JetBrains Mono");
-/* @import url("https://fonts.googleapis.com/css?family=Fira Sans"); */
-
 :root {
     /* colors */
     --clr-warm-gray: #504A40;
@@ -25,15 +22,17 @@
 
 
     /* font family */
-    --ff-primary: JetBrains Mono, sans-serif;
+    --ff-primary: "Lucida Console", Courier, monospace;;
 
-    --fs-xs: .694rem;
-    --fs-sm: .833rem;
+    /* https://typescale.com/ */
+    --fs-xxsL .823rem;
+    --fs-xs: .878rem;
+    --fs-sm: .937rem;
     --fs-md: 1rem;
-    --fs-lg: 1.2rem;
-    --fs-xl: 1.44rem;
-    --fs-xxl: 1.782rem;
-    --fs-big-af:2.074rem;
+    --fs-lg: 1.067rem;
+    --fs-xl: 1.138rem;
+    --fs-xxl: 1.215rem;
+    --fs-big-af: 1.296rem;
 
     --fs-body: var(--fs-md);
 }
@@ -42,21 +41,8 @@
 body.night {
     --clr-primary: var(--clr-black);
     --clr-fg: var(--clr-whitish);
-    --clr-accent: var(--clr-pinkish);
     --clr-header: var(--clr-rusty);
-    --clr-hover: var(--clr-teal);
-    --clr-tag: var(--clr-red);
-}
-
-
-body.day {
-    /*--clr-primary: wheat;*/
-   --clr-primary: var(--clr-whitish);
-    --clr-fg: black;
-    --clr-header: var(--clr-blue);
-    --clr-accent: var(--clr-red);
-    --clr-tag: var(--clr-green);
-    --clr-hover: var(--clr-rusty);
+    --clr-hover: var(--clr-pinkish);
 }
 
 * {
@@ -96,20 +82,32 @@ aside, main, footer {
     padding: 1em;
 }
 
+header {
+    padding-bottom: 1em;
+}
+
 h2, h3, h4, h5, h6 {
-    font-size: var(--fs-md);
+    color: var(--clr-rusty);
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+  border-bottom: solid 1px #666;
 }
 
 h1 {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-xxl);
+    color: var(--clr-rusty);
 }
 
 h2 {
+    font-size: var(--fs-xl);
+}
+
+h3 {
     font-size: var(--fs-lg);
 }
 
-p {
-    padding: 0em 0em 1em 0em;
+p, ul, ol {
+    padding-bottom: 1em;
 }
 
 address {
@@ -121,10 +119,19 @@ small {
     font-size: var(--fs-xs);
 }
 
+ul {
+    list-style: square;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
 nav ul {
     width: fit-content;
-    list-style-type: none;
+    list-style: none;
 }
+
 a {
     color: inherit; 
 }
@@ -136,14 +143,6 @@ nav a {
 input {
     background: inherit;
     color: inherit;
-}
-
-article, section {
-    margin-bottom: 2em;
-}
-
-article.sm-article-body {
-    font-size: var(--fs-sm);
 }
 
 a:hover {
@@ -161,6 +160,8 @@ hr {
 
 table {
     border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 th {
@@ -172,22 +173,17 @@ td, th {
     border: solid 1px var(--clr-fg);
 }
 
-li {
-    list-style-type: none;
+caption {
+    color: var(--clr-header);
+    padding-bottom: .5em;
+    text-align: left;
+}
+
+ul li p, ol li p {
+   display: inline;
 }
 
 /* classes */
-
-.picture {
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post-title {
-    /* color: var(--clr-accent); */
-}
 
 .wrapper {
     margin: auto;
@@ -224,7 +220,6 @@ li {
 .icon:hover path {
     fill: var(--clr-hover);
 }
-
 /* some utility classes */
 
 .clr-accent {
@@ -235,35 +230,16 @@ li {
     color: var(--clr-hover);
 }
 
-.timeline {
-    list-style: square inside;
-}
-
 .no-text-dec {
     text-decoration: none;
 }
 
-/* media queries */
-/* media color scheme is for users without javascript enabled */
-@media (prefers-color-scheme: light) {
-    body {
-        /*--clr-primary: wheat;*/
-        --clr-primary: var(--clr-whitish);
-        --clr-fg: black;
-        --clr-header: var(--clr-blue);
-        --clr-accent: var(--clr-red);
-        --clr-tag: var(--clr-green);
-        --clr-hover: var(--clr-rusty);
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        --clr-primary: var(--clr-black);
-        --clr-fg: var(--clr-whitish);
-        --clr-accent: var(--clr-pinkish);
-        --clr-header: var(--clr-rusty);
-        --clr-hover: var(--clr-teal);
-        --clr-tag: var(--clr-red);
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-areas: 
+            "main"
+            "aside"
+            "footer"; /* Adjust areas for single column layout */
+        grid-template-columns: 1fr; /* Change to a single column layout */
     }
 }
