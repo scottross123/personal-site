@@ -1,0 +1,26 @@
+name: Zola on Netlify
+
+on:
+  push:
+    branches: [ master ]
+  
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v3
+
+      - name: Install and Run Zola
+        run: |
+          sudo snap install --edge zola
+          zola build
+
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_API_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=public --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
