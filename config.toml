@@ -2,7 +2,7 @@ title = "scott"
 
 # The URL the site will be built for
 # CHANGE
-base_url = "https://scottross.dev"
+base_url = "https://scottross.sh"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
