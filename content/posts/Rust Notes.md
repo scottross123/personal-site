@@ -1,7 +1,7 @@
 +++
 
 title = "Rust Notes"
-description = "Notes taken while working my through [the offical Rust book](https://doc.rust-lang.org/book/title-page.html)"
+description = "Notes taken while working my through [the official Rust book](https://doc.rust-lang.org/book/title-page.html)"
 date = 2022-11-29
 tags = ["bread", "baking"]
 
