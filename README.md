@@ -18,6 +18,6 @@ Run `zola build` in project directory to generate static site in `public` folder
 Run `zola server` to both build and on project on a local dev server on `127.0.0.1:1111`
 
 ## TODO
- - Add a tag system for blog posts
  - Cleanup CSS and remove unneeded styles (please don't look index.css it's a mess right now)
+ - Add ubuntu font
 
