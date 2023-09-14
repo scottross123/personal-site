@@ -8,15 +8,11 @@ Eventually I will probably write full articles on how I use and my thoughts on t
 
 ## OS 
 
-What Operating Systems do I use? Basically *nix.
-
 - Debian (personal)
 - Arch (personal)
 - macOS (work)
 
 ## Software
-
-Software and programs I use.
 
 - zsh
 - neovim
@@ -26,8 +22,6 @@ Software and programs I use.
 - Obsidian (kinda)
 
 ## Langauges
-
-Programming languages I use or have used.
 
 - TypeScript (lots)
 - Java (lots)
