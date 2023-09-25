@@ -121,7 +121,6 @@ ul, ol {
     list-style-position: inside;
 }
 
-
 a {
     color: inherit; 
 }
@@ -175,6 +174,14 @@ ul li p, ol li p {
 
 blockquote {
     font-style: italic;
+}
+
+pre {
+    padding: .5em;
+}
+
+code {
+    background-color: #2b303b;
 }
 
 /* classes */
