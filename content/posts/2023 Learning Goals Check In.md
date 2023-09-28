@@ -8,9 +8,6 @@ tags = ["tech", "programming"]
 
 +++
 
-
-# 2023 Learning Goals Check-In
-
 It's nearly 3/4th of the way through 2023, so I thought I might go ahead and check in on some of the learning goals I made for this last year.
 
 ## Learn a Functional Programming Language
