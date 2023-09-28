@@ -13,25 +13,23 @@
     <body class="">
         <div class="wrapper">
 
+            <header>
+                <nav>
+                    <ul class="nav-links">
+                        <li ><a href="/"><strong>/home/scott</strong></a>
+                        <li><a href="/posts">~/posts</a></li>
+                        <li><a href="/tags">~/tags</a></li>
+                        <li><a href="/privacy" >~/privacy</a></li>
+                    </ul>
+                </nav>
+            </header>
+
             <main>
                 {% block content %}
                 {% endblock content %}
             </main>
 
-            <aside>
-                <nav>
-                    <ul class="nav-links">
-                        <li ><a href="/"><strong>/home/scott</strong></a>
-                        <li><a href="/posts">/posts</a></li>
-                        <li><a href="/tags">/tags</a></li>
-                        <li><a href="/uses" >/uses</a></li>
-                        <li><a href="/privacy" >/privacy</a></li>
-                    </ul>
-                </nav>
-            </aside>
-
             <footer>
-
                 <address>
                     © scott ross | powered by <a href="https://www.getzola.org/" target="_blank">zola</a> | <a href="">source
                 </address>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMonoNerdFontMono-Regular.ttf");
+}
+
 :root {
     /* colors */
     --clr-warm-gray: #504A40;
@@ -22,7 +27,7 @@
 
 
     /* font family */
-    --ff-primary: "Times New Roman", Times, serif;
+    --ff-primary: "JetBrains Mono", serif;
 
     /* https://typescale.com/ */
     --fs-xxsL .823rem;
@@ -64,33 +69,22 @@ body {
     line-height: 1.75;
 }
 
-aside {
-    grid-area: aside;
-}
-
-main {
-    grid-area: main;
-}
-
 footer {
     display: flex;
     justify-content: center;
-    grid-area: footer;
 }
 
-aside, main, footer {
+.wrapper > header, main, footer {
     padding: 1em;
 }
 
-header {
+article > header {
     padding-bottom: 1em;
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--clr-rusty);
     padding-bottom: .5em;
-    margin-bottom: .5em;
-  border-bottom: solid 1px #666;
 }
 
 h1 {
@@ -106,7 +100,7 @@ h3 {
     font-size: var(--fs-lg);
 }
 
-p, ul, ol {
+p, ol {
     padding-bottom: 1em;
 }
 
@@ -127,10 +121,6 @@ ul, ol {
     list-style-position: inside;
 }
 
-nav ul {
-    width: fit-content;
-    list-style: none;
-}
 
 a {
     color: inherit; 
@@ -183,19 +173,26 @@ ul li p, ol li p {
    display: inline;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 /* classes */
+
+.nav-links {
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
 
 .wrapper {
     margin: auto;
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 4fr 1fr; 
-    grid-template-rows: 1fr auto; 
-    grid-template-areas:
-        "main aside"
-        "footer footer";
+    grid-template-rows: auto 1fr auto; 
     padding: 1em;
-    gap: 1em;
     min-width: 20em;
     max-width: 65em;
 }   
@@ -217,9 +214,6 @@ ul li p, ol li p {
     list-style-type: none;
 }
 
-.icon:hover path {
-    fill: var(--clr-hover);
-}
 /* some utility classes */
 
 .clr-accent {
@@ -232,14 +226,4 @@ ul li p, ol li p {
 
 .no-text-dec {
     text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .wrapper {
-        grid-template-areas: 
-            "main"
-            "aside"
-            "footer"; /* Adjust areas for single column layout */
-        grid-template-columns: 1fr; /* Change to a single column layout */
-    }
 }
