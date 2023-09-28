@@ -3,7 +3,6 @@
 {% block content %}
     <section>
 		<h1>/posts</h1>
-        <p>
             {% if section.pages | length == 0 %}
                 no posts
             {% else %}
@@ -15,6 +14,5 @@
             {% endfor %}
             </ul>
             {% endif %}
-        </p>
     </section>
 {% endblock content %}
