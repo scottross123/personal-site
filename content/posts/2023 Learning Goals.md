@@ -3,8 +3,8 @@
 title = "2023 Learning Goals"
 description = "Stuff I wanna learn this year."
 date = 2023-02-18
-[taxonomies]
-tags = ["tech", "programming"]
+
+tags = ["goals"]
 
 +++
 

@@ -3,8 +3,8 @@
 title = "2023 Learning Goals Check-In"
 description = "Reviewing my learning goals for this year"
 date = 2023-09-13
-[taxonomies]
-tags = ["tech", "programming"]
+
+tags = ["goals"]
 
 +++
 
@@ -48,7 +48,7 @@ This hobby has really deepened my interesting in Linux System Administration and
 
 > I definitely want to build a PC this year.
 
-So did not do that. And probably will not do that this year or not even the next. But I did learn a lot more about computer hardware, specifically laptop hardware. I'm comfortable now with opening a laptop and doing upgrades and repairs, even the more daunting ones like upgrading the display on my ThinkPads. 
+So did not do that. And probably will not do that this year or not even the next. But I did learn a lot more about computer hardware, specifically laptop hardware. I'm comfortable now with opening a laptop and doing upgrades and repairs, even the more daunting ones like upgrading the display on my ThinkPads.
 
 I want to continuing learning more about hardware and computer repair, trying more ambitious projects on my machines and eventually get deeper into electronics.
 
@@ -62,5 +62,4 @@ So one day I'll get to building my own PC from scratch. Just not right now.
 
 This has definitely been a primary focus of mine this year. My attitudes regarding digital privacy and security have shifted significantly see this year. Not to say that before this year I thought it didn't matter, if you told me a year ago that privacy and security in the digital age was important I'd likely agree. But you could say I was blissfully ignorant and unaware to the extent at which our personal data is collected, used for profit, and leaked, as well how vulnerable I was digitally and many people are.
 
-So I took many steps to counteract this, gradually switching from services offered by Big Tech to privacy-respecting alternatives and self-hosted options, using a password manager and 2FA for all my online accounts, encrypting my hard drive and data, and etc. There is still much work to be done on this side however, but this year I made real significant progress in taking responsibility for my privacy and security.
-
+So this year I learned a lot about privacy and security, I would like to expand upon this more in future blog posts.

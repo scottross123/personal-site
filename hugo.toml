@@ -37,5 +37,11 @@ theme = 'smol'
 
     [[menu.footer]]
         name = "gitlab"
-        url = "https://example.com/@user"
+        url = "https://gitlab.com/swr2112"
         weight = 2
+
+[outputs]
+home = ['html']
+section = ['html']
+taxonomy = ['html']
+term = ['html', 'rss']

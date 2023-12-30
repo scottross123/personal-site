@@ -3,8 +3,9 @@
 title = "How I Backup My System using Borg"
 description = "How I backup my systems using Borg"
 date = 2023-09-29
-[taxonomies]
 tags = ["backups", "linux"]
+
+# TODO delete this post mayb
 
 +++
 
@@ -30,7 +31,7 @@ There are two options for `--encryption`: repokey and keyfile.
 
 This option is specifying where the encryption key will be stored. When using `repokey`, the key will be stored in the repository, meaning you will only need a passphrase to decrypt your backup. If keyfile is chosen, then the keyfile will be stored externally, in the `~/.config/borg` directory by default. You will have to supply this keyfile as well as the passphrase to access the repository. 
 
-Regardless of which option you choose, it is reccomended to backup this key somewhere <u>separate</u> from your borg repository. If you choose repokey you can export your keyfile using `borg export`.
+Regardless of which option you choose, it is recommended to backup this key somewhere <u>separate</u> from your borg repository. If you choose repokey you can export your keyfile using `borg export`.
 
 Initially I was using keyfile encryption for all my backups, but I ultimately decided that this was over-doing it when I am just backing up to an external hard drive that never leaves my room. But I do think using an external keyfile is a good idea when backing up to a computer or device you do not have physical control over, such as a VPS in the cloud.
 
