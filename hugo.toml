@@ -29,6 +29,12 @@ theme = 'smol'
         url = "/privacy/"
         weight = 4
 
+  [[menu.main]]
+        identifier = "rss"
+        name = "~/rss"
+        url = "/posts/index.xml"
+        weight = 5
+
 # Footer
   [[menu.footer]]
         name = "github"

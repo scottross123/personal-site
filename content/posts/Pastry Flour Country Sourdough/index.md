@@ -6,7 +6,7 @@ date = 2022-11-22
 tags = ["baking"]
 +++
 
-{{ picture(img="bread.webp", alt="bread", caption="Sourdough with 8% protein pastry flour") }}
+{{< picture img="bread.webp" alt="bread" caption="Sourdough with 8% protein pastry flour" >}}
 
 As challenge/experiment I wanted to try to make a decent country sourdough out of 100% white pastry flour, specifically [Bob's Red Mill Fine Pastry Flour](https://www.bobsredmill.com/unbleached-white-fine-pastry-flour.html), intended for pastries and cakes with a protein content of 8-9%. Also wanted to do this to dispel the myth I’ve seen a few times that you need the highest protein flour possible to make good bread. It is definitely possible to decent bread using weaker and all sorts of flour.
 
