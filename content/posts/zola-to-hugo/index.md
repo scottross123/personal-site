@@ -1,7 +1,7 @@
 +++
 title = "Transitioning from Zola To Hugo"
 date = 2024-01-01
-draft = true
+draft = false
 description = "Documentation from how I transition from Zola to Hugo"
 tags = ['web']
 +++
