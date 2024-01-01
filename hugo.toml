@@ -10,29 +10,28 @@ theme = 'smol'
         url = "/"
         weight = 1
 
+  [[menu.main]]
+        identifier = "about"
+        name = "~/about"
+        url = "/about/"
+        weight = 2
 
   [[menu.main]]
         identifier = "posts"
         name = "~/posts"
         url = "/posts/"
-        weight = 2
+        weight = 3
 
   [[menu.main]]
         identifier = "tags"
         name = "~/tags"
         url = "/tags/"
-        weight = 3
+        weight = 4
 
   [[menu.main]]
         identifier = "prviacy"
         name = "~/privacy"
         url = "/privacy/"
-        weight = 4
-
-  [[menu.main]]
-        identifier = "rss"
-        name = "~/rss"
-        url = "/posts/index.xml"
         weight = 5
 
 # Footer
@@ -45,6 +44,11 @@ theme = 'smol'
         name = "gitlab"
         url = "https://gitlab.com/swr2112"
         weight = 2
+
+    [[menu.footer]]
+        name = "rss"
+        url = "/posts/index.xml"
+        weight = 3
 
 [outputs]
 home = ['html']

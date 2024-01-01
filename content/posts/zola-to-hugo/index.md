@@ -1,12 +1,12 @@
 +++
 title = "Transitioning from Zola To Hugo"
-date = 2023-12-29
+date = 2024-01-01
 draft = true
 description = "Documentation from how I transition from Zola to Hugo"
 tags = ['web']
 +++
 
-Recently I migrated this blog from [Zola](https://getzola.org), a site generator written in Rust, to [Hugo](https://gohugo.io), another static site generator written in Go. If you're into web dev you've probably already of heard of Hugo, but maybe not Zola. It is very similar to Hugo, and like Hugo uses Markdown files for its content.
+Recently I migrated this blog from [Zola](https://getzola.org), a site generator written in Rust, to [Hugo](https://gohugo.io), a static site generator written in Go. If you're into web dev you've probably already of heard of Hugo, but maybe not Zola. It is very similar to Hugo, and like Hugo uses Markdown files for its content.
 
 ## Why I switched
 
@@ -19,6 +19,12 @@ Migrating the content was super easy. `cp /path/to/my/zola/site/content/* /path/
 To get to tags to work correctly I needed to remove `[taxonomies]` from the the front matter. This is unnecessary in Hugo.
 
 The shortcode syntax between Zola and Hugo is also different, so you will have to modify your short codes like so.
+
+![zola](zola.png)
+> Frontmatter and shortcode for zola site
+
+![hugo](hugo.png)
+> Frontmatter and shortcode for hugo site
 
 My previous zola site didn't use any theme and just templates I created and some janky custom CSS. I opted to nix all of this and use the [smol](https://themes.gohugo.io/themes/smol/) for Hugo, plus some of my own modifications.
 
