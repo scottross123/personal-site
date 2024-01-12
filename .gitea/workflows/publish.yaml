@@ -39,4 +39,4 @@ jobs:
             linux/amd64
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE }}:${{ env.TAG }}
+            ${{ vars.REGISTRY }}/${{ vars.IMAGE }}:${{ vars.TAG }}
