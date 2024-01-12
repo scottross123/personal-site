@@ -1,3 +1,7 @@
+#[submodule "themes/smol"]
+  #path = themes/smol
+  #url = https://github.com/colorchestra/smol.git
+  
 [submodule "themes/smol"]
 	path = themes/smol
-	url = https://github.com/colorchestra/smol.git
+	url = https://gitea.tipoca.city/scott/smol.git

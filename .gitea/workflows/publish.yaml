@@ -17,6 +17,9 @@ jobs:
       - name: Install Hugo
         run: apt update -y && apt install hugo -y
 
+      - name: Update Submodules
+        run: git submodule update --init --recursive
+
       - name: Build Hugo
         run: hugo --config hugo.toml
 
