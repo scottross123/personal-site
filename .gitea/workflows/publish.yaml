@@ -13,6 +13,12 @@ jobs:
         with:
           ref: master
 
+      - name: Install Hugo
+        run: apt install hugo
+
+      - name: Build Hugo
+        run: hugo
+
       - name: Install Docker
         run: curl -fsSL https://get.docker.com | sh
 
