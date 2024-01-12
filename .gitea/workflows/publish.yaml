@@ -13,11 +13,12 @@ jobs:
         with:
           ref: master
 
+      # might be faster to just download and extract the binary instead
       - name: Install Hugo
-        run: apt install hugo
+        run: apt update -y && apt install hugo -y
 
       - name: Build Hugo
-        run: hugo
+        run: hugo --config hugo.toml
 
       - name: Install Docker
         run: curl -fsSL https://get.docker.com | sh
