@@ -1,10 +1,10 @@
 +++
 title = "How I Deploy this Site from Self-Hosted Infrastructure"
-date = 2024-01-12 
-tags = ["webdev"]
+date = 2024-01-14 
+tags = ["webdev", "self-hosting"]
 +++
 
-For the first iteration of this site, the repository for the source code was hosted on GitHub, so naturally I first tried hosting it in Github pages. Soon I switch Netlify pretty soon after that because I was annoyed with some of the limitations of GitHub pages. My process for deploying it to Netlify was pretty simple: I wrote a GitHub action which on pushes to master would build the site using zola, then push it to my Netlify site using their official action.
+For the first iteration of this site, the repository was hosted on GitHub and the actual site on Netlify. My process for deploying it to Netlify was pretty simple: I wrote a GitHub action which on pushes to master would build the site using zola, then push it to my Netlify site using their official action.
 
 ```yaml
 name: Zola on Netlify
@@ -37,11 +37,11 @@ jobs:
 
 *The action in question*.
 
-This worked fine, but after falling deep down the self-hosting and Linux rabbit hole, I of course thought "wouldn't this be awesome if I deployed it from my own server and had complete control?"
+This worked fine, but after falling deep down the self-hosting and Linux rabbit hole, I of course thought "wouldn't this be awesome if I deployed and hosted it from my own server?"
 
 ## Gitea
 
-So now flash-forward to now, the code is hosted on a self-hosted Gitea repository, with a Gitea action which builds and pushes an image for my compiled static site. That image is then deploy as a container on my server.
+So now flash-forward to now, the code is hosted on a self-hosted Gitea repository, with a Gitea action which builds and pushes an image for my compiled static site. That image is then deployed as a container on my server.
 
 ```yaml
 name: Build Docker Image and Publish to Local Registry
@@ -59,7 +59,6 @@ jobs:
         with:
           ref: master
 
-      # might be faster to just download and extract the binary instead
       - name: Install Hugo
         run: apt update -y && apt install hugo -y
 
@@ -77,12 +76,6 @@ jobs:
         
       - name: Set up Docker Buildx
         uses: https://github.com/docker/setup-buildx-action@v3
-
-          # TODO setup on authentication for registry 
-          #- name: Login to registry
-          #uses: https://github.com/docker/login-action@v3
-          #with:
-          #registry: ${{ env.REGISTRY }}
      
       - name: Build and push
         uses: https://github.com/docker/build-push-action@v5
@@ -100,17 +93,17 @@ jobs:
 
 *New action.*
 
-If you don't know, [Gitea](https://github.com/go-gitea/gitea) is an open-source and self-hosted alternative to Github. Visually Gitea looks similar to Github and also has a lot of the same features, including Actions.
+If you don't know, [Gitea](https://github.com/go-gitea/gitea) is an open-source and self-hosted alternative to GitHub. Visually Gitea looks similar to GitHub and also has a lot of the same features, including Actions.
 
 ![Gitea](gitea.png)
 
 *Gitea repo for this site*
 
-The workflow syntax and Actions UI is basically identical to Gihtub, however there are some capabilities missing when compared to Github Actions. But there are also a couple extra features that Gitea actions has, such as writing actions in Go.
+The workflow syntax and Actions UI is basically identical to Gihtub, however there are some capabilities missing when compared to GitHub Actions. But there are also a couple extra features that Gitea actions has, such as writing actions in Go.
 
-If you self-host Gitea and want to use actions, you need to setup the Gitea act runner. [Act](https://github.com/nektos/act) is a cool project for running Github actions locally using docker, and this is the underlying tool Gitea actions use to create runners. Please note though, these containers Act and Gitea Actions use for running jobs <u>are not</u> the same as the runners GitHub uses to to run jobs. GitHub actions use full VMs, not containers, and come extra tools that may missing from the containers used by Act. For example, the `ubuntu-latest` tag in the action above actually corresponds to a Debian bookworm container, and it does not come with docker installed by default, hence the extra Docker installation step.
+If you self-host Gitea and want to use actions, you need to setup the Gitea act runner. [Act](https://github.com/nektos/act) is a cool project for running GitHub actions locally using docker, and this is the underlying tool Gitea actions uses to run actions. Please note though, these containers Act and Gitea Actions use for running jobs **are not** the same as the runners GitHub uses to to run jobs. GitHub actions use full VMs, not containers, and come extra tools that may missing from the containers used by Act. For example, the `ubuntu-latest` tag in the action above actually corresponds to a Debian bookworm container, and it does not come with docker installed by default, hence the extra Docker installation step.
 
-Setting up the Gitea Act Runner is a little out of scope for this post but you can learn how to do it [here](https://docs.gitea.com/next/usage/actions/quickstart) from the official documentation. If you need a reference though, here is my docker compose service for the act runner:
+You can setup the Gitea Act Runner by following the official documentation [here](https://docs.gitea.com/next/usage/actions/quickstart). I have set it up using docker. If you need a reference, here is my docker compose service for the act runner:
 
 ```yaml
 runner:
@@ -128,7 +121,7 @@ runner:
       	- GITEA_INSTANCE_URL: ${INSTANCE_URL}
       	- GITEA_RUNNER_REGISTRATION_TOKEN_FILE: /run/secrets/runner_registration_token
       	- GITEA_RUNNER_NAME: gitea-runner-1
-      	- GITEA_RUNNER_LABELS: ubuntu-latest:docker://node:16-bullseye,ubuntu-22.04:docker://node:16-bullseye,ubuntu-20.04:docker://node:16-bullseye,ubuntu-18.04:docker://node:16-buster,cth-ubuntu-latest:docker://catthehacker/ubuntu:act-latest
+      	- GITEA_RUNNER_LABELS: ubuntu-latest:docker://debian:bookworm,ubuntu-22.04:docker://debian:bookworm,ubuntu-20.04:docker://debian:bullseye,ubuntu-18.04:docker://debian:buster,cth-ubuntu-latest:docker://catthehacker/ubuntu:act-latest
      networks:
      	- gitea
      restart: 'unless-stopped'
@@ -161,12 +154,10 @@ Done.
 
 To make my site accessible to the world, I don't actually open any ports on my home network. Instead, I have cloud VPS which acts as a proxy server for everything I host publicly.
 
-I would like to make a part 2 with a more detailed guide on how I set this up, but basically I use a wireguard tunnel to connect the servers and nginx as a reverse proxy. On my main server I run a gluetun container which is connected to the wireguard serve ron my VPS, and then for any service I want to expose publicly connect to that container to glueutn by adding `network_mode: 'container:public'` to the compose.yaml.
+I would like to make a part 2 with a more detailed guide on how I set this up, but basically I use a Wireguard tunnel to connect the containers on my home server to the VPS and use nginx as a reverse proxy on the VPS. I use a gluetun container as a client to my Wireguard server on the VPS, and then for any service I want to expose publicly I connect to that container to glueutn by adding `network_mode: 'container:public'` to the compose.yaml.
 
-[Gluetun](https://github.com/qdm12/gluetun) is a VPN client container which you can then route other container's traffic through so they can also use the VPN connect. Very cool project, check it out.
+[Gluetun](https://github.com/qdm12/gluetun) is a VPN client container which you can then route other container's traffic through so they can also use the VPN connection. It supports a variety of VPN providers as well as custom OpenVPN and Wireguard setups. Very cool project, check it out.
 
-After this I write an nginx config for the site I want to expose on the VPs and proxy pass to the appropriate Wireguard IP address and port. 
+After this I write an nginx config for the site I want to expose on the VPS and proxy pass to the appropriate Wireguard IP address and port that application is exposed on. 
 
-Again, there will be a part 2 going into more depth on this setup and also the limitations I've come across.
-
-That's all until part 2, hope this gave you some ideas for how to deploy your own site form your own machine.
+That's all until part 2, where I will go into detail on how these services are exposed publicly, but for now I hope this gave you some ideas for how to deploy your own site from your own machine.
