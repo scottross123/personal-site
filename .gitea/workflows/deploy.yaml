@@ -1,0 +1,59 @@
+name: rsync files to remote server
+run-name: rsync files to remote server
+
+on:
+  push:
+    branches: 
+      - 'master'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      - name: Install Hugo
+        run: apt update -y && apt install hugo -y
+
+      - name: Update Submodules
+        run: git submodule update --init --recursive
+
+      - name: Build Hugo
+        run: hugo --config hugo.toml
+
+      - name: Setup SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_REMOTE: ${{ secrets.SSH_REMOTE }}
+          HOST: ${{ vars.HOST }}
+        run: |
+          umask 077
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/key
+          cat <<EOF > ~/.ssh/config
+          Host "$HOST"
+            Hostname "$SSH_REMOTE"
+            User "$SSH_USER"
+            port $SSH_PORT
+            IdentityFile ~/.ssh/key
+          EOF
+          ssh-keyscan -p "$SSH_PORT" -H "$SSH_REMOTE" > ~/.ssh/known_hosts
+          echo Created ~/.ssh/key, ~/.ssh/config, and ~/.ssh/known_hosts
+
+      - name: Install rsync
+        run: apt update -y && apt install rsync -y
+
+      - name: cp everything into public dir and then rsync 
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          HOST: ${{ vars.HOST }}
+          SITE: ${{ vars.SITE }}
+        run: |
+          cd public
+          rsync -a --delete -e ssh . "$SSH_USER@$HOST:/var/www/$SITE"
+
