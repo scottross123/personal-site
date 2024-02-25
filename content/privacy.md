@@ -1,5 +1,5 @@
 +++
-title = "Privacy"
+title = "~/privacy"
 type = "privacy"
 +++
 

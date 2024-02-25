@@ -11,22 +11,40 @@ theme = 'smol'
         weight = 1
 
   [[menu.main]]
-        identifier = "posts"
-        name = "~/posts"
-        url = "/posts/"
+        identifier = "blog"
+        name = "~/blog"
+        url = "/blog/"
         weight = 2
+
+  [[menu.main]]
+        identifier = "wiki"
+        name = "~/wiki"
+        url = "/wiki/"
+        weight = 3
+
+  [[menu.main]]
+        identifier = "recipes"
+        name = "~/recipes"
+        url = "/recipes/"
+        weight = 4
+
+  [[menu.main]]
+        identifier = "stuff"
+        name = "~/stuff"
+        url = "/stuff/"
+        weight = 5
 
   [[menu.main]]
         identifier = "tags"
         name = "~/tags"
         url = "/tags/"
-        weight = 3
+        weight = 6
 
   [[menu.main]]
-        identifier = "prviacy"
+        identifier = "privacy"
         name = "~/privacy"
         url = "/privacy/"
-        weight = 4
+        weight = 7
 
 # Footer
   [[menu.footer]]
@@ -41,7 +59,7 @@ theme = 'smol'
 
     [[menu.footer]]
         name = "rss"
-        url = "/posts/index.xml"
+        url = "/blog/index.xml"
         weight = 3
 
 [outputs]
