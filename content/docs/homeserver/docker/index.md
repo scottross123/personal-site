@@ -13,7 +13,7 @@ Some Advantages of using Docker containers for application deployment:
 - Easy deployment and distribution. There are images for almost every application you might need for your home server, and Docker allows for consistent deployments regardless of the host system as long as you have docker installed.
 - Docker containers are much more lightweight than VMs, your other option for isolating applications on a single host. This is because they share the same kernel as the host (assuming you are on a Linux system)
 
-## Services
+## Services I Host Using Docker
 - [Gitea](gitea)
 - [Nextcloud](nextcloud)
 - [Minecraft](minecraft)

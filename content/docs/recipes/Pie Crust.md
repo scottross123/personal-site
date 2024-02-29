@@ -1,0 +1,1 @@
+100% Pima Wheat was a lot more crumbly, harder to roll out, and less flaky than the 50% Pima 50% Beehive wheat. Used 75% butter for both.
