@@ -1,0 +1,41 @@
++++
+title = "Scrutiny"
++++
+
+[Scrutiny](https://github.com/AnalogJ/scrutiny) is a cool webUI for monitoring the S.M.A.R.T status of your drives.
+
+## Docker Compose
+
+*NOTE* if you want the most up-to-date version of this file, check out the [src](https://github.com/scottross123/home-server/blob/master/apps/scrutiny/compose.yaml)
+
+```yaml
+---
+networks:
+  proxy:
+    external: true
+
+services:
+  scrutiny:
+    container_name: scrutiny
+    image: ghcr.io/analogj/scrutiny:master-omnibus
+    cap_add:
+      - SYS_RAWIO
+      # this is necesssary to get info on nvme drives
+      - SYS_ADMIN
+        #ports:
+      #- "${WEB_PORT}:8080" # webapp
+      #- "8086:8086" # influxDB admin
+    volumes:
+      - /run/udev:/run/udev:ro
+      - config:/opt/scrutiny/config
+      - influxdb:/opt/scrutiny/influxdb
+    devices:
+      - "/dev/sda"
+      - "/dev/nvme0"
+    networks:
+      - proxy
+
+volumes:
+  config:
+  influxdb:
+```

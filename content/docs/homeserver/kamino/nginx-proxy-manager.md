@@ -39,5 +39,5 @@ services:
       - proxy
       - nextcloud-aio
     restart: 'unless-stopped'
-
 ```
+
