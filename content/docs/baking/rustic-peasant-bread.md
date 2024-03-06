@@ -2,8 +2,6 @@
 title = "Rustic Peasant Bread"
 +++
 
-[original link](https://old.reddit.com/r/Sourdough/comments/oq641x/peasant_bread_w_coarse_rye_meal/)
-
 This recipe is based off the recipe for Rustic Peasant Bread from the Southern Ground book. It interested me seeing cracked rye used in both the levain and in scald added to the bread, but I don’t have any cracked rye so I substituted with pumpernickel rye meal. This is a really coarse grind of rye flour, somewhere between whole grain rye and cracked grain. It makes up about ~30% of the total flour in the recipe.
 
 ## Baker’s %s:

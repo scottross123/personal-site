@@ -2,9 +2,6 @@
 title = "Beer, Malt Syrup, and Sprouted Rye Sourdough"
 +++
 
-
-[original post](https://old.reddit.com/r/Sourdough/comments/npb24b/beer_malt_syrup_and_sprouted_rye_berries/)
-
 First time baking with sprouted/malted (believe it means the same thing, correct me if I’m wrong) berries. I followed the instructions in Tartine No. 3 to sprout some rye berries which I included in the dough. I thought the malt flavors of beer and barley malt syrup might complement it well, but I think I added too much syrup it was a bit overpowering and caused the loafs to brown too fast.
 
 30% KA BF

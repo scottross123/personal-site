@@ -2,8 +2,6 @@
 title = 'Whole Wheat, Polenta, and Toasted Cornflour Sourdough'
 +++
 
-[original post](https://old.reddit.com/r/Sourdough/comments/oign8p/whole_wheat_polenta_and_toasted_cornflour/)
-
 Based mostly off [this recipe](https://www.theperfectloaf.com/polenta-rosemary-sourdough/) from the perfectloaf and the porridge method described in Tartine No. 3
 
 40% white whole wheat

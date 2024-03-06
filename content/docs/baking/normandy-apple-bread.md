@@ -2,8 +2,6 @@
 title = "Normandy Apple Bread"
 +++
 
-[original recipe](https://old.reddit.com/r/Sourdough/comments/prykoq/normandy_apple_bread_made_with_cider_and_dried/)
-
 Based this on the Normandy apple bread from Jeffrey Hamelman's Bread. I increased the hydration, changed the flour, and omitted the fresh yeast in the original recipe.
 
 **Baker's %s:**

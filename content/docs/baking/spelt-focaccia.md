@@ -2,8 +2,6 @@
 title = "Spelt Focaccia"
 +++
 
-[original post](https://old.reddit.com/r/Sourdough/comments/oevz5d/spelt_focaccia/)
-
 Mostly used theperfectloaf/Maurizio’s recipe here as reference, very good starting point for focaccia imo!
 
 50% whole grain spelt

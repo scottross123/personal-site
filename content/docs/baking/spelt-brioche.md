@@ -2,8 +2,6 @@
 title = "Whole Grain Spelt Brioche"
 +++
 
-[original post](https://old.reddit.com/r/Sourdough/comments/nzzpsb/50_whole_grain_spelt_100_naturally_leavened/)
-
 Naturally leavened bricohe, take two! Changed up the recipe from my [last post](https://www.reddit.com/r/Sourdough/comments/nr1y9b/100_naturally_leavened_and_partially_whole_grain/) on this bread, with more enrichment and 50% whole grain spelt! Took a risk and decided to base off the recipe for brioche from Hamelman's Bread, which I've made multiple times with just instant yeast. It's basically the same as the KA professional formula [here](https://www.kingarthurbaking.com/pro/formulas/brioche). I used half white wheat half whole grain spelt, prefermented 20% of the white flour into a stiff sweet starter (100% flour, 50% liquid starter, 37.5% water, 20% sugar), and replaced most of the sugar with honey. Whole grains of course absorb more water, so I ended up nearly doubling the amount of water to get the right consistency! Super impressed with how this came out!
 
 Baker's %s:

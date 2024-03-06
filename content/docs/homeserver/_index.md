@@ -23,12 +23,14 @@ That being said, this setup is very likely **not** not the most optimal setup. I
 
 ## Overview
 
+I name all my Unix systems after Star Wars planets because I’m a nerd and think it’s cooler than having scott@thinkpad-xyz as my hostname for everything.
+
 - Hardware
-    - 1 x Lenovo ThinkCentre M70s
-    - 1 x MacBook Pro 2018, 13inch
-    - 1 x Dell Wyse 5070 Extended
-    - 1 x RaspberryPi 3B
-    - 1 x TP Link A7 Archer Router
+    - 1 x [Lenovo ThinkCentre M70s (kamino)](/kamino)
+    - 1 x [MacBook Pro 2018, 13inch (coruscant)](/coruscant)
+    - 1 x [Dell Wyse 5070 Extended (umbara)](/umbara)
+    - 1 x [RaspberryPi 3B (bespin)](/bespin)
+    - 1 x [TP Link A7 Archer Router (TBD)](/archer)
 
 - Services
     - Nginx Proxy Manager as a reverse proxy
@@ -43,6 +45,7 @@ That being said, this setup is very likely **not** not the most optimal setup. I
     - FreshRSS for RSS
     - Mealie for recipe management
     - and more...
+
 
 
 

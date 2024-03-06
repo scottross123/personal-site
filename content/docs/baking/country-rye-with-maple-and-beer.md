@@ -2,8 +2,6 @@
 title = "Country Rye Sourdough w/ Maple Syrup, Beer, and Butter Toasted Rye Flake Porridge"
 +++
 
-[original post](https://old.reddit.com/r/Sourdough/comments/o3nlho/beer_maple_and_rye_flake_porridge/)
-
 Country Rye Sourdough w/ maple syrup, beer, and butter toasted rye flake porridge!
 
 40% CM T85

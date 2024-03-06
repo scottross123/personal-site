@@ -2,8 +2,6 @@
 title = "Spelt Baguettes"
 +++
 
-[original post](https://old.reddit.com/r/Sourdough/comments/oahpg0/baguettes_w_some_whole_grain_spelt/)
-
 More sourdough baguettes, based on Hamelman's recipe in Bread again. This time with whole grain spelt!
 
 Baker's %s:
