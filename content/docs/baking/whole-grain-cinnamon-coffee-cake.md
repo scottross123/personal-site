@@ -1,4 +1,6 @@
-# Whole Grain Cinnamon Coffee Cake
++++
+title = "Whole Grain Cinnamon Coffee Cake"
++++
 
 [Source](https://www.kingarthurbaking.com/recipes/whole-grain-cinnamon-coffee-cake-recipe)
 

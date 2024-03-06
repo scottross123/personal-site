@@ -2,29 +2,7 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<div>
-				{{ .Content }}
-			<div>
-
-      <div class="iframe-wrapper">
-        <iframe 
-          id="plausible-iframe"
-          plausible-embed src="https://p.scottross.dev/share/scottross.dev?auth=SCcazcAgE1l1yLeFpwdfv&embed=true&theme=dark" 
-          scrolling="no" 
-          frameborder="0" 
-          loading="lazy" 
-          style="width: 1px; min-width: 100%; min-height: 100%">
-        </iframe>
-
-        <div style="font-size: 14px; padding-bottom: 14px;">
-          Stats powered by 
-            <a target="_blank" style="color: var(--linkcolor);; text-decoration: underline;" href="https://plausible.io">
-              Plausible Analytics
-            </a>
-        </div>
-        <script async src="https://p.scottross.dev/js/embed.host.js"></script></div>
-      </div>
-
+			{{ .Content }}
 		</article>
 	</main>
 {{ end }}

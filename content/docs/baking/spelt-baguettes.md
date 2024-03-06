@@ -1,4 +1,6 @@
-# Spelt Baguettes
++++
+title = "Spelt Baguettes"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/oahpg0/baguettes_w_some_whole_grain_spelt/)
 

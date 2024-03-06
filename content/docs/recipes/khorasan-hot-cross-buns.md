@@ -1,5 +1,0 @@
-[original post](https://old.reddit.com/r/Sourdough/comments/o2rt01/50_whole_grain_khorasan_hot_cross_buns_w/)
-
-Some pretty untraditional hot cross buns made in the middle of June haha. I used this [recipe](https://food52.com/recipes/85374-sourdough-hot-cross-buns-with-chocolate-chips-recipe) from Maurizio (the perfect loaf) on food52 with some modifications. I replaced half the total bread flour with whole grain khorasan. While mixing, I needed add a lot of extra moisture, and ended up using ~2x as much water as the recipe calls for to get a nice consistency. Also added some more chocolate chips because I love chocolate. Baked 10 minutes longer than the recipe calls for at 400F the whole time to bake properly after adding all the extra water. Glazed with maple syrup after bake.
-
-I really like the flavor of these, there’s a slight tang but not in bad way, I like it. The spices and chocolate together pairs nicely together and the khorasan definitely adds more flavor. Maybe a little drier than when I baked these with all white flour, I think I extended the bake a little too long. Overall I’m happy!

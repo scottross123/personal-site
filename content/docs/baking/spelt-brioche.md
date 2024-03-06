@@ -1,4 +1,6 @@
-# Whole Grain Spelt
++++
+title = "Whole Grain Spelt Brioche"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/nzzpsb/50_whole_grain_spelt_100_naturally_leavened/)
 

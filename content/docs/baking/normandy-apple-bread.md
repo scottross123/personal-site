@@ -1,4 +1,6 @@
-# Normandy Apple Bread
++++
+title = "Normandy Apple Bread"
++++
 
 [original recipe](https://old.reddit.com/r/Sourdough/comments/prykoq/normandy_apple_bread_made_with_cider_and_dried/)
 

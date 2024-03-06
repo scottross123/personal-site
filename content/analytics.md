@@ -1,7 +1,10 @@
 +++
-title = "~/privacy"
-type = "privacy"
+title = "Analytics"
 +++
+
+Some analytics collected abouth this site
+
+## About Privacy
 
 I am not interested in harvesting your data, tracking you, or violating your privacy.
 
@@ -14,4 +17,6 @@ My reason for collecting these analytics is because I am curious how many people
 You can view the public analytics dashboard below. Any analytics I can see through the use of this software you can also see here.
 
 If you prefer to just avoid all analytics whatsoever, the best way would be to just disable JavaScript on this site. JavaScript is not nor will it ever be required for this site to be functional. If you have [uBlock Origin](https://ublockorigin.com/) you can do this easily for sites of your choosing (I also recommend uBlock Origin generally for just making browsing web far more tolerable).
+
+{{< analytics ruh >}}
 

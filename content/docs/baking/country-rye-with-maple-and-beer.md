@@ -1,4 +1,6 @@
-# Country Rye Sourdough w/ Maple Syrup, Beer,, and Butter Toasted Rye Flake Porridge
++++
+title = "Country Rye Sourdough w/ Maple Syrup, Beer, and Butter Toasted Rye Flake Porridge"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/o3nlho/beer_maple_and_rye_flake_porridge/)
 

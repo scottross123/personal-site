@@ -1,4 +1,6 @@
-# Whole Wheat, Polenta, and Toasted Cornflour Sourdough
++++
+title = 'Whole Wheat, Polenta, and Toasted Cornflour Sourdough'
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/oign8p/whole_wheat_polenta_and_toasted_cornflour/)
 

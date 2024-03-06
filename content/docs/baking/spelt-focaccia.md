@@ -1,4 +1,6 @@
-# Spelt Focaccia
++++
+title = "Spelt Focaccia"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/oevz5d/spelt_focaccia/)
 

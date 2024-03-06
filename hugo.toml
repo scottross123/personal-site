@@ -1,50 +1,36 @@
-baseURL = 'https://scottross.dev/'
+aseURL = 'https://scottross.dev/'
 languageCode = 'en-us'
 title = '/home/scott'
 theme = 'smol'
 
+enableGitInfo = true
+sectionPagesMenu = 'places'
+showChildrenInMenu = true
+
 [menu]  
   [[menu.main]]
-        identifier = "start"
-        name = "~/"
-        url = "/"
-        weight = 1
+        identifier = "posts"
+        name = "~/posts"
+        url = "/posts/"
+        weight = 20
 
   [[menu.main]]
-        identifier = "blog"
-        name = "~/blog"
-        url = "/blog/"
-        weight = 2
-
-  [[menu.main]]
-        identifier = "wiki"
-        name = "~/wiki"
-        url = "/wiki/"
-        weight = 3
-
-  [[menu.main]]
-        identifier = "recipes"
-        name = "~/recipes"
-        url = "/recipes/"
-        weight = 4
-
-  [[menu.main]]
-        identifier = "stuff"
-        name = "~/stuff"
-        url = "/stuff/"
-        weight = 5
+        identifier = "docs"
+        name = "~/docs"
+        url = "/docs/"
+        weight = 30
 
   [[menu.main]]
         identifier = "tags"
         name = "~/tags"
         url = "/tags/"
-        weight = 6
+        weight = 60
 
   [[menu.main]]
-        identifier = "privacy"
-        name = "~/privacy"
-        url = "/privacy/"
-        weight = 7
+        identifier = "analytics"
+        name = "~/analytics"
+        url = "/analytics/"
+        weight = 70
 
 # Footer
   [[menu.footer]]

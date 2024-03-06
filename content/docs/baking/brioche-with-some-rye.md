@@ -1,5 +1,6 @@
-# Hamelman's Brioche with Some Rye
-
++++
+title = "Classic Bricohe with some Rye"
++++
 
 Classic Brioche based off Jeffrey Hamelman's recipe from *Bread*. 
 

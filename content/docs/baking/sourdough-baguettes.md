@@ -1,4 +1,6 @@
-# Sourdough Baguettes
++++
+title = "Sourdough Baguettes"
++++
 [original post](https://old.reddit.com/r/Sourdough/comments/nxreg2/first_baguettes_a_in_while/)
 First sourdough baguettes in months now! Definitely plan to bake more. Visually, could be better. I obviously need practice on scoring and I think kinda screwed up the baking temp, tried to increase the baking temperature for the last 5 or so minutes but ended up burning the tops a little and getting an uneven color. Shaping also needs practice. Based my recipe mostly on Hamelman's for sourdough baguettes in Bread and [this](https://www.youtube.com/watch?v=LiqEhzyc7zQ) video from King Arthur featuring Martin Philip.
 

@@ -1,4 +1,6 @@
-# Toasted Millet and Sprouted Whole Grain
++++
+title = "Toasted Millet and Sprouted Whole Grain"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/od5dkc/toasted_millet_and_sprouted_whole_grain/)
 

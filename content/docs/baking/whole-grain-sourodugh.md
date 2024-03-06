@@ -1,4 +1,6 @@
-# 100% Whole Grain Sourdough
++++
+title = "100% Whole Grain Sourdough"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/o6nv9k/100_whole_grain_sourdough/)
 

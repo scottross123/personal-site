@@ -1,4 +1,6 @@
-# Rustic Peasant Bread
++++
+title = "Rustic Peasant Bread"
++++
 
 [original link](https://old.reddit.com/r/Sourdough/comments/oq641x/peasant_bread_w_coarse_rye_meal/)
 

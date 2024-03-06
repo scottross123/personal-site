@@ -1,5 +1,6 @@
-# Sweet Potato, Rosemary, and Durum Sourdough
-
++++
+title = "Sweet Potato, Rosemary, and Durum Sourdough"
++++
 
 [original post](https://old.reddit.com/r/Sourdough/comments/o755e7/sweet_potato_rosemary_and_durum/h2wkslg/)
 40% Whole grain durum

@@ -1,4 +1,7 @@
-# Sourdough with Old Bread Porridge and Flaxseeds
++++
+title = "Old Bread Porridge and Flaxseed Sourdough"
++++
+
 
 [original post](https://old.reddit.com/r/Sourdough/comments/nn5pfs/experiment_with_old_bread_porridge_and_flaxseeds/)
 
