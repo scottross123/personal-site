@@ -68,10 +68,3 @@ Before adding to the dough, I chopped them up a bit more finely. Then set my kit
 
 Mix-ins like dried fruits and nuts can interfere with gluten formation so its much preferable and easier to add them after gluten as been developed. It's common to add them in after mix with a stretch and fold or lamination fold (my preference). However, because I was doing such a large batch of dough, and using my mixer already, it made more sense to mix the apples in gently on the lowest speed.
 
-I've done bread with potato, pumpkin, and plantain so I can give some guidance on that. You want to mash them well so they homogenize into the dough. I've had some issues where I didn't mash properly or cooked them long enough and ended up with chunks of potato and plantain in my dough. Not the end of the world though. If you're using canned pumpkin puree that shouldn't be an issue. I've only used the canned stuff but will definitely try actual pumpkin or squash this fall!
-
-But like mix-ins and fat, these ingredients prevent gluten formation, so you want to add them after you've already moderately developed your gluten. If I were making pumpkin bread in similar fashion to this I would do it in the same way, mix gently in on speed 1 after gluten has been developed. By hand I would give the dough one round of mixing by hand with the levain, let it rest, then give it another round of mixing adding the pumpkin.
-
-Edit: If pumpkin puree is a significant portion hydration it should be added in the beginning with the other liquid, pumpkin puree has a lot of moisture.
-
-And thank you! You will as long as you keep baking and practice :)
