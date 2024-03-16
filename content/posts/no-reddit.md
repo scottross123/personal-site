@@ -23,4 +23,6 @@ Sure, a lot of times when I have a question about something and there is a Reddi
 
 Regardless of whether it is a technical or non-technical question, I find myself getting stuck down endless "research" rabbit holes, and wasting time reading comment after comment, leaving with only a half-baked answer, and feeling annoyed with myself afterwards for wasting so much time.
 
+I have blacklisted all Reddit-related domains on my Pi-Hole to keep myself off on all my personal devices.
+
 I'll try and make an update in 30 days. Might not be that interesting though. I just wanted to do this as a challenge to myself and provide some context on why.
