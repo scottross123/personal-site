@@ -8,6 +8,13 @@ sectionPagesMenu = 'places'
 showChildrenInMenu = true
 
 [menu]  
+
+  [[menu.main]]
+        identifier = "about"
+        name = "~/about"
+        url = "/about/"
+        weight = 10
+
   [[menu.main]]
         identifier = "posts"
         name = "~/posts"
@@ -15,9 +22,9 @@ showChildrenInMenu = true
         weight = 20
 
   [[menu.main]]
-        identifier = "docs"
-        name = "~/docs"
-        url = "/docs/"
+        identifier = "notes"
+        name = "~/notes"
+        url = "/notes/"
         weight = 30
 
   [[menu.main]]

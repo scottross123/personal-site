@@ -1,5 +1,5 @@
 +++
-title = "Docs"
+title = "Notes"
 sort_by = "date"
 outputs = ["html", "rss"]
 +++
